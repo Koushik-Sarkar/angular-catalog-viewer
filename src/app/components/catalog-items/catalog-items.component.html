@@ -1,0 +1,5 @@
+<ng-container *ngFor="let catalog of items; let i = index">
+    <div class="catalog item" (click)="onImageSelect(catalog, i)" [ngClass]="i == currentIndex? 'thumb-select':''">
+        <app-catalog-item class="catalog-item" [catalog]=catalog></app-catalog-item>
+    </div>
+</ng-container>
